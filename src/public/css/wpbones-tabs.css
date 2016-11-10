@@ -1,117 +1,92 @@
 .wpbones-tabs {
-  position: relative;
-  margin-top: 16px;
+	margin-top: 16px;
+	display: flex;
+	flex-wrap: wrap;
 }
+
 .wpbones-tabs > label {
-  position: absolute;
-  z-index: 1;
+	order: 1;
+	display: block;
+	padding: 0.5rem 1rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+	background-color: transparent;
+	font-weight: bold;
+	transition: background ease 0.2s;
+	outline: none;
+	border: 1px solid #bbb;
+	z-index: 1;
+	color: #888;
+	-moz-border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
 }
-.wpbones-tabs > label,
-.wpbones-tabs > h2 {
-  font-size: 1.1em;
-  width: 9em;
-  height: 2em;
-  line-height: 2em;
+
+.wpbones-tabs > label:hover {
+	background-color: #fff;
+	color: #000;
 }
-.wpbones-tabs > h2 {
-  position: relative;
-  margin: 6px 0 0 0;
-  text-align: center;
-  background-color: #ddd;
-  color: #666;
-  z-index: -1;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+
+.wpbones-tabs .wpbones-tab {
+	order: 99;
+	flex-grow: 1;
+	width: 100%;
+	display: none;
+	padding: 1rem;
+	background-color: #fff;
+	position: relative;
+	top: -1px;
+	border: 1px solid #bbb;
+	-moz-border-radius: 0 2px 2px 2px;
+	-webkit-border-radius: 0 2px 2px 2px;
+	border-radius: 0 2px 2px 2px;
 }
-.wpbones-tabs > label {
-  outline: none;
+
+.wpbones-tabs > input[type="radio"] {
+	position: absolute;
+	opacity: 0;
 }
-.wpbones-tabs > label ~ label,
-.wpbones-tabs > h2 ~ h2 {
-  position: absolute;
-  top: 0;
+
+.wpbones-tabs > input[type="radio"]:checked + label {
+	background-color: #fff;
+	color: #000;
+	border-bottom: none;
 }
-.wpbones-tabs label:nth-child(1),
-.wpbones-tabs h2:nth-child(3) {
-  left: 0em;
+
+.wpbones-tabs > input[type="radio"]:checked + label + .wpbones-tab {
+	display: block;
 }
-.wpbones-tabs label:nth-child(5),
-.wpbones-tabs h2:nth-child(7) {
-  left: 9em;
-}
-.wpbones-tabs label:nth-child(9),
-.wpbones-tabs h2:nth-child(11) {
-  left: 18em;
-}
-.wpbones-tabs input + h2 + div {
-  position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  margin-top: -1px;
-}
-.wpbones-tabs input:checked + h2 + div {
-  position: static !important;
-  padding: 2em !important;
-  height: auto !important;
-  width: auto !important;
-}
-.wpbones-tabs label:hover {
-  cursor: pointer;
-}
-.wpbones-tabs > div {
-  background: #fff;
-  padding: 1em;
-}
-.wpbones-tabs input[name="tabs"] {
-  opacity: 0;
-  position: absolute;
-}
-.wpbones-tabs:hover h2 {
-  outline: none !important;
-}
-.wpbones-tabs input[name="tabs"]:checked + h2 {
-  background: #fff;
-  color: #333;
-  border-left: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  z-index: 1;
-  padding-bottom: 4px;
-  padding-top: 3px;
-  margin-top: -7px;
-}
-@media screen and (max-width: 45em) {
-  .wpbones-tabs label,
-  .wpbones-tabs input[name="tabs"] {
-    display: none;
-  }
-  .wpbones-tabs > input + h2 + div {
-    display: block !important;
-    position: static !important;
-    padding: 1em !important;
-    height: auto !important;
-    width: auto !important;
-  }
-  .wpbones-tabs h2,
-  .wpbones-tabs input[name="tabs"]:checked + h2 {
-    margin-top: 16px;
-    border: none;
-    width: auto;
-    position: static !important;
-    text-align: left;
-    background-color: transparent;
-  }
-  .wpbones-tabs input[name="tabs"]:checked + h2 {
-    background-color: transparent;
-    color: #333;
-  }
-  .wpbones-tabs h2:after {
-    display: none !important;
-  }
+
+@media (max-width: 45em) {
+	.wpbones-tabs .wpbones-tab,
+  .wpbones-tabs > label {
+		order: initial;
+	}
+
+	.wpbones-tabs > .wpbones-tab {
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		top: 0;
+		border-bottom: none;
+		border-top: none;
+	}
+
+	.wpbones-tabs > label {
+		width: 100%;
+		margin: 0;
+		border-bottom: none;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+
+	.wpbones-tabs > input[type="radio"]:checked + label {
+		border-bottom: 1px solid #ddd;
+	}
+
+	.wpbones-tabs > label:nth-last-child(2),
+  .wpbones-tabs .wpbones-tab:last-child {
+		border-bottom: 1px solid #bbb;
+	}
 }
