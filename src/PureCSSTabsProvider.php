@@ -38,6 +38,10 @@ class PureCSSTabsProvider
       $id = sanitize_title( $label );
     }
 
+    if( is_string( $selected ) ) {
+      $selected = ( sanitize_title( $selected ) === $id );
+    }
+
     ?>
     <input id="<?php echo $id ?>"
            type="radio"
