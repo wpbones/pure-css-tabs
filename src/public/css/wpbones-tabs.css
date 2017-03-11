@@ -45,6 +45,7 @@
 .wpbones-tabs > input[type="radio"] {
 	position: absolute;
 	opacity: 0;
+	display: none;
 }
 
 .wpbones-tabs > input[type="radio"]:checked + label {
