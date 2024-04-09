@@ -10,28 +10,33 @@ Pure CSS tabs for WordPress/WP Bones
 
 You can install third party packages by using:
 
-    $ php bones require wpbones/pure-css-tabs
+```sh
+php bones require wpbones/pure-css-tabs
+```
    
 I advise to use this command instead of `composer require` because doing this an automatic renaming will done.  
 
 You can use composer to install this package:
 
-    $ composer require wpbones/pure-css-tabs
+```sh
+composer require wpbones/pure-css-tabs
+```
 
 You may also to add `"wpbones/pure-css-tabs": "^1.0"` in the `composer.json` file of your plugin:
  
 ```json
   "require": {
-    "php": ">=5.5.9",
-    "wpbones/wpbones": "~0.8",
+    "php": ">=7.2",
+    "wpbones/wpbones": "~1.0",
     "wpbones/pure-css-tabs": "~1.0"
   },
 ```
 
-
 and run 
 
-    $ composer install
+```sh
+composer install
+```
     
 Alternatively, you can get the `src/resources/assets/less/wpbones-tabs.less` and then compile it, or get directly the `src/public/css/wpbones-tabs.css` files.    
 Also, you can get pre-compiled minified version `src/public/css/wpbones-tabs.min.css`.
