@@ -1,4 +1,4 @@
-# Pure CSS tabs for WP Bones
+# Pure CSS Tabs for WP Bones
 
 <p align="center">
 
@@ -25,6 +25,8 @@
 </p>
 
 This package provides a simple way to create tabs with pure CSS for WordPress/WP Bones.
+
+![Pure CSS Tabs for WP Bones](https://github.com/user-attachments/assets/e8143a4c-8694-420b-b281-c0fb0d080f5a)
 
  ## Requirements
 
