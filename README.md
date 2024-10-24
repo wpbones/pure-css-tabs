@@ -1,28 +1,15 @@
 # Pure CSS Tabs for WP Bones
 
-<p align="center">
+<div align="center">
 
-  <a href="https://packagist.org/packages/wpbones/pure-css-tabs">
-  <img src="https://poser.pugx.org/wpbones/pure-css-tabs/v/stable?style=for-the-badge" alt="Latest Stable Version" />
-  </a>
+[![Latest Stable Version](https://poser.pugx.org/wpbones/pure-css-tabs/v/stable?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs) &nbsp;
+[![Latest Unstable Version](https://poser.pugx.org/wpbones/pure-css-tabs/v/unstable?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs) &nbsp;
+[![Total Downloads](https://poser.pugx.org/wpbones/pure-css-tabs/downloads?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs) &nbsp;
+[![License](https://poser.pugx.org/wpbones/pure-css-tabs/license?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs) &nbsp;
+[![Monthly Downloads](https://poser.pugx.org/wpbones/pure-css-tabs/d/monthly?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs)
 
-  <a href="https://packagist.org/packages/wpbones/pure-css-tabs">
-   <img src="https://poser.pugx.org/wpbones/pure-css-tabs/v/unstable?style=for-the-badge" alt="Latest Unstable Version" />
-  </a>
 
-  <a href="https://packagist.org/packages/wpbones/pure-css-tabs">
-   <img src="https://poser.pugx.org/wpbones/pure-css-tabs/downloads?style=for-the-badge" alt="Total Downloads" />
-  </a>
-
-  <a href="https://packagist.org/packages/wpbones/pure-css-tabs">
-   <img src="https://poser.pugx.org/wpbones/pure-css-tabs/license?style=for-the-badge" alt="License" />
-  </a>
-
-  <a href="https://packagist.org/packages/wpbones/pure-css-tabs">
-   <img src="https://poser.pugx.org/wpbones/pure-css-tabs/d/monthly?style=for-the-badge" alt="Monthly Downloads" />
-  </a>
-
-</p>
+</div>
 
 This package provides a simple way to create tabs with pure CSS for WordPress/WP Bones.
 
