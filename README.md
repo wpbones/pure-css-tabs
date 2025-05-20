@@ -40,8 +40,8 @@ You may also to add `" wpbones/pure-css-tabs": "~0.7"` in the `composer.json` fi
 ```json copy filename="composer.json" {4}
   "require": {
     "php": ">=7.4",
-    "wpbones/wpbones": "~1.5",
-    " wpbones/pure-css-tabs": "~0.7"
+    "wpbones/wpbones": "~1.9",
+    "wpbones/pure-css-tabs": "~1.1"
   },
 ```
 
@@ -180,9 +180,11 @@ Also, you can use `openTab()` and `closeTab()` methods:
   /**
    * Display the open tab.
    *
-   * @param string $label    The label of tab.
-   * @param null   $id       Optional. ID of tab. If null, will sanitize_title() the label.
-   * @param bool   $selected Optional. Default false. TRUE for checked.
+   * @param string|array  $label    The label of tab or un array with [label, group]
+   * @param null          $id       Optional. ID of tab. If null, will sanitize_title() the label.
+   * @param bool          $selected Optional. Default false. TRUE for checked.
+   * @param string        $group    Optional. Group of tabs when you want to handle multiple tab in the same view. Default 'tabs'
+
    */
    public static function openTab( $label, $id = null, $selected = false ) {}
 ```
@@ -197,6 +199,36 @@ Also, you can use `openTab()` and `closeTab()` methods:
   <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::openTab( 'Tab 2' ) ?>
     <h2>Hello, world! I'm the content of tab-2</h2>
   <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::closeTab ?>
+
+</div>
+```
+
+You may also use the hook approach by using `::useTabs()`
+
+```php copy
+<?php [$openTabs, $closeTabs] = WPKirk\PureCSSTabs\PureCSSTabsProvider::useTabs() ?>
+
+<div class="wpbones-tabs">
+
+  <!-- first tab -->
+  <?php $openTabs(['Settings', 'hook'], null, true); ?>
+
+  <div>
+    <h3>Content for Settings</h3>
+  </div>
+
+  <?php $closeTabs(); ?>
+
+  <!-- second tab -->
+  <?php $openTabs(['Dashboard', 'hook']); ?>
+
+  <div>
+    <h3>Content for Dashboard</h3>
+  </div>
+
+  <?php $closeTabs(); ?>
+
+  <!-- son on... -->
 
 </div>
 ```
