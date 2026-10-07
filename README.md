@@ -3,7 +3,6 @@
 <div align="center">
 
 [![Latest Stable Version](https://poser.pugx.org/wpbones/pure-css-tabs/v/stable?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs) &nbsp;
-[![Latest Unstable Version](https://poser.pugx.org/wpbones/pure-css-tabs/v/unstable?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs) &nbsp;
 [![Total Downloads](https://poser.pugx.org/wpbones/pure-css-tabs/downloads?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs) &nbsp;
 [![License](https://poser.pugx.org/wpbones/pure-css-tabs/license?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs) &nbsp;
 [![Monthly Downloads](https://poser.pugx.org/wpbones/pure-css-tabs/d/monthly?style=for-the-badge)](https://packagist.org/packages/wpbones/pure-css-tabs)
